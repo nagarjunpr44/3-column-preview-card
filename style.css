@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.card-container{
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        
+}
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.card{
+    margin: 30px;
+    padding: 5px;
+
+}
+.card h1{
+    margin: 30px 0;
+    text-transform: uppercase;
+    color:  hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.card p{
+    margin-bottom: 40px;
+    color: hsla(0, 0%, 100%, 0.60);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.card button{
+    width: 140px;
+    height: 45px;
+    padding: 6px;
+    margin: 40px 5px 5px 5px ;
+    border-radius: 20px;
+    background-color:  hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+}
+.card-1 h1 button{
+    color: hsl(31, 77%, 52%);
+}
+.card-2 h1 button{
+    color: hsl(184, 100%, 22%);
+
+}
+.card-3 h1 button{
+    color: hsl(179, 100%, 13%);
+
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:700px)
+{
+    
+    .card-container{
+
+        display: grid;
+        grid-template-columns: auto;
+        height: 100vh;
+        
+        }
+        .card-1{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+        }
+        .card-3{
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        
+        }
+}
